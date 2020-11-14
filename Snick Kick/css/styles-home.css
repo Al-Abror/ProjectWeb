@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.header {
+    background-color: white;
+}
+div.header > div.container {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+div.header .logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/icon/logo.png');
+    background-size: cover;
+    margin-right: 15px;
+}
+.sub-contain{
+  display: flex;
+}
+.button {
+  width: 150px;
+  font-size: 10px;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+.button-box {
+  color: white;
+  background-color: black;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.329);
+}
+::placeholder{
+  color: white;
+  text-align: center;
+}
+.login-icon{
+  width: 38px;
+  height: 38px;
+  background-image: url(../images/icon/login.png);
+  background-size: cover;
+}
+.navbar {
+    margin-bottom: 0;
+}
+div.navbar > div.navigation {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar .navigation a {
+    margin: 0 25px;
+    color: black;
+    font-size: 20pt;
+    font-weight: 800;
+}
+#home {
+    border-bottom: 3px solid black;
+}
+/* .navbar .navigation a:hover {
+    border-bottom: 3px solid black;
+} */
+.navbar-shoes {
+    padding: 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+div.navbar-shoes > div.nav-shoes {
+    padding: 0px 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar-shoes .nav-shoes a {
+    margin: 0 35px;
+    color: black;
+    font-family: ;
+    font-weight: 100;
+}
+.navbar-shoes .nav-shoes a:hover {
+    font-weight: bold;
+}
+.slidershow{
+    margin-top: 20px;
+    width: 1200px;
+    height: 450px;
+    overflow: hidden;
+  }
+  .middle{
+    position: relative;
+    top: 50%;
+    bottom:;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .nav-button{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid black;
+    border-radius: 100px;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: black;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }
+.top-sell {
+    margin-top: 20px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+.top-sell #sp-title {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: bold;
+}
+ div.top-sell > div.list-top-sell {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.shoes {
+    width: 250px;
+    height: 175px;
+    background-color: white;
+    margin: 0 50px;
+    
+}
+.shoes img{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  bottom: 0;
+  cursor: pointer;
+}
+.shoes img:hover{
+  border: 1px solid black;
+}
+.shoes #pkurven{
+  height: 170px;
+}
+.shoes #hibiki {
+  height: 170px;
+}
+.shoes #ergo {
+  height: 170px;
+}
+#txt-shoes{
+  
+}
+.events {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.events #sp-title {
+margin-top: 50px;
+font-size: 25px;
+font-weight: bold;
+}
+div.events > div.list-events {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.event {
+  width: 500px;
+  height: 550px;
+  background-color: white;
+  margin: 0 50px;
+  
+}
+.event img{
+width: 100%;
+height: 100%;
+margin: 0 auto;
+bottom: 0;
+cursor: pointer;
+}
+div.footer {
+  background-color: black;
+  color: white;
+}
+div.footer > div.container {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+div.container > div.left-side {
+  display: table-column;
+}
+.medsos {
+  display: flex;
+}
+.icon{
+  width: 30px;
+  height: 25px;
+  margin: 0 15px;
+}
+.icon img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.right-side li{
+  list-style-type: none;
+}
+.right-side li a{
+  text-decoration: none;
+  color: white;
+}
+.right-side li a:hover{
+  text-decoration: underline;
+}
+.txt-copyrights{
+  margin-top: 20px;
+
+}
